@@ -1,0 +1,13 @@
+{"pipeline": [
+  {"ring": {"period": 16}, "stations": ["alu", "mul"],
+   "inputs": [{"name": "a", "value": 2}, {"name": "b", "value": 3},
+              {"name": "c", "value": 4}],
+   "ops": [{"id": "m", "op": "MUL", "a": "a", "b": "b"},
+           {"id": "v", "op": "ADD", "a": "m", "b": "c"}],
+   "produce": ["v"]},
+  {"ring": {"period": 64}, "stations": ["alu", "mul"], "import": ["v"],
+   "inputs": [{"name": "d", "value": 5}, {"name": "e", "value": 6}],
+   "ops": [{"id": "w", "op": "MUL", "a": "v", "b": "d"},
+           {"id": "out", "op": "ADD", "a": "w", "b": "e"}],
+   "outputs": ["out"]}
+]}

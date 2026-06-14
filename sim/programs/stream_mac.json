@@ -1,0 +1,181 @@
+{
+ "config": {
+  "rings": [
+   {
+    "id": 0,
+    "period": 8
+   },
+   {
+    "id": 1,
+    "period": 32
+   }
+  ],
+  "stations": [
+   {
+    "type": "xfer",
+    "ring": 1,
+    "pos": 0,
+    "to_ring": 0,
+    "to_pos": 0
+   },
+   {
+    "type": "alu",
+    "ring": 0,
+    "pos": 0
+   },
+   {
+    "type": "mul",
+    "ring": 0,
+    "pos": 0
+   }
+  ]
+ },
+ "seed": [
+  {
+   "ring": 0,
+   "slot": 0,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 2,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 4,
+   "packet": {
+    "kind": "data",
+    "payload": 3
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 3,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 5,
+   "packet": {
+    "kind": "instr",
+    "op": "MUL",
+    "src_a": 5,
+    "src_b": 7,
+    "dst": 6,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 1,
+   "packet": {
+    "kind": "instr",
+    "op": "ADD",
+    "src_a": 7,
+    "src_b": 2,
+    "dst": 7,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 0,
+   "packet": {
+    "kind": "data",
+    "payload": 1
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 31,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 3,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 8,
+   "packet": {
+    "kind": "data",
+    "payload": 2
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 7,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 3,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 16,
+   "packet": {
+    "kind": "data",
+    "payload": 3
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 15,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 3,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 24,
+   "packet": {
+    "kind": "data",
+    "payload": 4
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 23,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 3,
+    "payload": 0
+   }
+  }
+ ],
+ "run": [
+  {
+   "cycles": 32,
+   "advance": [
+    0,
+    1
+   ]
+  }
+ ],
+ "accslot": 0
+}

@@ -1,0 +1,7 @@
+{"ring": {"period": 16}, "stations": ["alu", "mul"],
+ "loop": {"trip": 4,
+   "state": [{"name": "acc", "init": 0}],
+   "consts": [{"name": "c", "value": 3}, {"name": "x", "value": 2}],
+   "body": [{"id": "tmp", "op": "MUL", "a": "c", "b": "x"}],
+   "updates": [{"state": "acc", "op": "ADD", "a": "acc", "b": "tmp"}],
+   "outputs": ["acc"]}}

@@ -1,0 +1,356 @@
+{
+ "config": {
+  "rings": [
+   {
+    "id": 0,
+    "period": 16
+   },
+   {
+    "id": 1,
+    "period": 48
+   },
+   {
+    "id": 2,
+    "period": 48
+   },
+   {
+    "id": 3,
+    "period": 48
+   }
+  ],
+  "stations": [
+   {
+    "type": "mul",
+    "ring": 0,
+    "pos": 0
+   },
+   {
+    "type": "alu",
+    "ring": 0,
+    "pos": 0
+   },
+   {
+    "type": "xfer",
+    "ring": 1,
+    "pos": 0,
+    "to_ring": 0,
+    "to_pos": 0
+   },
+   {
+    "type": "xfer",
+    "ring": 2,
+    "pos": 0,
+    "to_ring": 0,
+    "to_pos": 0
+   },
+   {
+    "type": "xfer",
+    "ring": 3,
+    "pos": 0,
+    "to_ring": 0,
+    "to_pos": 0
+   }
+  ]
+ },
+ "seed": [
+  {
+   "ring": 0,
+   "slot": 5,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 9,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 6,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 14,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 10,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 13,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 1,
+   "packet": {
+    "kind": "data",
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 11,
+   "packet": {
+    "kind": "instr",
+    "op": "MUL",
+    "src_a": 11,
+    "src_b": 15,
+    "dst": 2,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 12,
+   "packet": {
+    "kind": "instr",
+    "op": "MUL",
+    "src_a": 2,
+    "src_b": 14,
+    "dst": 5,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 4,
+   "packet": {
+    "kind": "instr",
+    "op": "ADD",
+    "src_a": 1,
+    "src_b": 9,
+    "dst": 1,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 0,
+   "slot": 2,
+   "packet": {
+    "kind": "instr",
+    "op": "ADD",
+    "src_a": 7,
+    "src_b": 15,
+    "dst": 7,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 0,
+   "packet": {
+    "kind": "data",
+    "payload": 5
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 47,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 11,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 16,
+   "packet": {
+    "kind": "data",
+    "payload": 6
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 15,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 11,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 32,
+   "packet": {
+    "kind": "data",
+    "payload": 7
+   }
+  },
+  {
+   "ring": 1,
+   "slot": 31,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 11,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 2,
+   "slot": 0,
+   "packet": {
+    "kind": "data",
+    "payload": 2
+   }
+  },
+  {
+   "ring": 2,
+   "slot": 47,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 7,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 2,
+   "slot": 16,
+   "packet": {
+    "kind": "data",
+    "payload": 3
+   }
+  },
+  {
+   "ring": 2,
+   "slot": 15,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 7,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 2,
+   "slot": 32,
+   "packet": {
+    "kind": "data",
+    "payload": 4
+   }
+  },
+  {
+   "ring": 2,
+   "slot": 31,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 7,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 3,
+   "slot": 0,
+   "packet": {
+    "kind": "data",
+    "payload": 1
+   }
+  },
+  {
+   "ring": 3,
+   "slot": 47,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 15,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 3,
+   "slot": 16,
+   "packet": {
+    "kind": "data",
+    "payload": 5
+   }
+  },
+  {
+   "ring": 3,
+   "slot": 15,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 15,
+    "payload": 0
+   }
+  },
+  {
+   "ring": 3,
+   "slot": 32,
+   "packet": {
+    "kind": "data",
+    "payload": 2
+   }
+  },
+  {
+   "ring": 3,
+   "slot": 31,
+   "packet": {
+    "kind": "instr",
+    "op": "XFER",
+    "src_a": 1,
+    "src_b": 0,
+    "dst": 15,
+    "payload": 0
+   }
+  }
+ ],
+ "run": [
+  {
+   "cycles": 48,
+   "advance": [
+    0,
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "outs": [
+  5,
+  9
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "config": {
+    "rings": [{"id": 0, "period": 16}, {"id": 1, "period": 64}],
+    "stations": [
+      {"type": "xfer", "ring": 0, "pos": 0, "to_ring": 1, "to_pos": 0},
+      {"type": "steer", "ring": 0, "pos": 0, "kmax": 1}
+    ]
+  },
+  "seed": [
+    {"ring": 0, "slot": 8, "packet": {"kind": "data", "payload": 77}},
+    {"ring": 0, "slot": 6, "packet": {"kind": "data", "payload": 1}},
+    {"ring": 0, "slot": 4, "packet": {"kind": "instr", "op": "XFER", "src_a": 4, "src_b": 0, "dst": 10, "payload": 0}},
+    {"ring": 0, "slot": 2, "packet": {"kind": "instr", "op": "STEER", "src_a": 4, "src_b": 0, "dst": 6, "payload": 1}}
+  ],
+  "run": [{"cycles": 16, "advance": [0, 1]}]
+}

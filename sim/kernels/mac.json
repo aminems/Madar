@@ -1,0 +1,6 @@
+{"ring": {"period": 16}, "stations": ["alu", "mul"],
+ "inputs": [{"name": "a", "value": 6}, {"name": "b", "value": 7}, {"name": "c", "value": 3}],
+ "consts": [],
+ "ops": [{"id": "t0", "op": "MUL", "a": "a", "b": "b"},
+         {"id": "t1", "op": "ADD", "a": "t0", "b": "c"}],
+ "outputs": ["t1"]}

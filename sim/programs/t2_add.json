@@ -1,0 +1,12 @@
+{
+  "config": {
+    "rings": [{"id": 0, "period": 16}],
+    "stations": [{"type": "alu", "ring": 0, "pos": 0}]
+  },
+  "seed": [
+    {"ring": 0, "slot": 3, "packet": {"kind": "data", "payload": 7}},
+    {"ring": 0, "slot": 2, "packet": {"kind": "data", "payload": 35}},
+    {"ring": 0, "slot": 1, "packet": {"kind": "instr", "op": "ADD", "src_a": 2, "src_b": 1, "dst": 2, "payload": 0}}
+  ],
+  "run": [{"cycles": 16, "advance": [0]}]
+}

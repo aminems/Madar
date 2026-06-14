@@ -1,0 +1,8 @@
+{"ring": {"period": 32}, "stations": ["alu", "mul"],
+ "inputs": [{"name": "a", "value": 2}, {"name": "x", "value": 3}, {"name": "b", "value": 4}, {"name": "c", "value": 5}],
+ "consts": [],
+ "ops": [{"id": "t0", "op": "MUL", "a": "a", "b": "x"},
+         {"id": "t1", "op": "ADD", "a": "t0", "b": "b"},
+         {"id": "t2", "op": "MUL", "a": "t1", "b": "x"},
+         {"id": "t3", "op": "ADD", "a": "t2", "b": "c"}],
+ "outputs": ["t3"]}

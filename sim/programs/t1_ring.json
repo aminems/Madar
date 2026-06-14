@@ -1,0 +1,11 @@
+{
+  "config": {
+    "rings": [{"id": 0, "period": 16}],
+    "stations": []
+  },
+  "seed": [
+    {"ring": 0, "slot": 3, "packet": {"kind": "data", "payload": 111}},
+    {"ring": 0, "slot": 9, "packet": {"kind": "data", "payload": 222}}
+  ],
+  "run": [{"cycles": 16, "advance": [0]}]
+}
