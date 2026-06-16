@@ -89,11 +89,14 @@ python3 -m sim.ai               # the AI-accelerator report
 ## Citation
 
 ```bibtex
-@misc{bergach2026madar,
-  title  = {{MADAR}: An Address-Free Processor},
-  author = {Bergach, Mohamed Amine},
-  year   = {2026},
-  note   = {Preprint. Source and artifact: https://github.com/aminems/Madar}
+@misc{bergach2026madaraddressfreeprocessor,
+      title={MADAR: An Address-Free Processor}, 
+      author={Mohamed Amine Bergach},
+      year={2026},
+      eprint={2606.15535},
+      archivePrefix={arXiv},
+      primaryClass={cs.PF},
+      url={https://arxiv.org/abs/2606.15535}, 
 }
 ```
 
